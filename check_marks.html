@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Check Marks</title>
+        <!--===============================================================================================-->
+        <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/bootstrap/css/bootstrap.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/animate/animate.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/css-hamburgers/hamburgers.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/select2/select2.min.css"
+        />
+        <!--===============================================================================================-->
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/check_marks.css" />
+        <link rel="stylesheet" href="css/util.css" />
+    </head>
+
+    <body>
+        <div class="limiter">
+            <div class="seg">
+                <span class="login100-form-title">
+                    Check Marks-<i class="fa fa-trophy" aria-hidden="true"></i>
+                </span>
+
+                <div>
+                    <div
+                        class="wrap-input100 validate-input"
+                        data-validate="Valid email is required: ex@abc.xyz"
+                    >
+                        <input
+                            class="input100"
+                            type="text"
+                            name="usn"
+                            id="usn"
+                            placeholder="USN"
+                            required
+                        />
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+                                <i class="fa fa-id-card" aria-hidden="true"></i>
+                            </span>
+                        </span>
+                    </div>
+                    <br />
+
+                    <div
+                        class="wrap-input100 validate-input"
+                        data-validate="Valid email is required: ex@abc.xyz"
+                    >
+                        <input
+                            class="input100"
+                            type="text"
+                            name="subject"
+                            id="subject"
+                            placeholder="Subject"
+                            required
+                        />
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                        </span>
+                    </div>
+
+                    <br />
+                    <button class="login100-form-btn" value="submit">
+                        Check
+                    </button>
+                </div>
+                <br />
+                <div class="wrap-marks">
+                    {% if student_marks %}
+                    <h1>{{ student_marks.name }}</h1>
+                    <h2>{{ student_marks.usn }}-{{ student_marks.subject }}</h2>
+                    <h3>
+                        CIE: {{ student_marks.cie1 }} {{ student_marks.cie2 }}
+                        {{ student_marks.cie3 }}
+                    </h3>
+                    <h3>
+                        LAB: {{ student_marks.lab1 }} {{ student_marks.lab2 }}
+                        AAT: {{ student_marks.aat }}
+                    </h3>
+                    <h3>
+                        QUIZ: {{ student_marks.quiz1 }} {{ student_marks.quiz2
+                        }}
+                    </h3>
+                    <h3>SEE: {{ student_marks.see }}</h3>
+                    <hr />
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

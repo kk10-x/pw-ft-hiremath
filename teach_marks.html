@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!--===============================================================================================-->
+        <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/bootstrap/css/bootstrap.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/animate/animate.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/css-hamburgers/hamburgers.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/select2/select2.min.css"
+        />
+        <!--===============================================================================================-->
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/teach_marks.css" />
+        <link rel="stylesheet" href="css/util.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/java.css" />
+    </head>
+    <body>
+        <div>
+            <div class="limiter">
+                <div class="container-login100" id="particles-js">
+                    <script
+                        type="text/javascript"
+                        src="js/particles.js"
+                    ></script>
+                    <script type="text/javascript" src="js/app.js"></script>
+                    <div class="wrap-marks">
+                        <span
+                            class="login100-form-title"
+                            style="padding-bottom: 20px;"
+                        >
+                            Create New Submission
+                        </span>
+                        <form action="/enter_marks" method="POST">
+                            <div class="container">
+                                <form action="/enter_marks" method="POST">
+                                    <div class="content">
+                                        <div class="common">
+                                            <div
+                                                class="wrap-input100 validate-input"
+                                            >
+                                                <input
+                                                    class="input100"
+                                                    type="text"
+                                                    name="name"
+                                                    placeholder="Name"
+                                                    required
+                                                />
+                                            </div>
+
+                                            <div
+                                                class="wrap-input100 validate-input"
+                                            >
+                                                <input
+                                                    class="input100"
+                                                    type="text"
+                                                    name="usn"
+                                                    id="usn"
+                                                    pattern="[1]{1}[A-Za-z]{2}[0-9]{2}[a-zA-Z]{2}[0-9]{3}"
+                                                    placeholder="USN"
+                                                    title="Format required:1AA11AA123"
+                                                    required
+                                                />
+                                            </div>
+
+                                            <div
+                                                class="wrap-input100 validate-input"
+                                            >
+                                                <input
+                                                    class="input100"
+                                                    type="text"
+                                                    name="subject"
+                                                    placeholder="Subject"
+                                                    required
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="common">
+                                            <div
+                                                class="wrap-input100 validate-input"
+                                            >
+                                                <input
+                                                    class="input100"
+                                                    type="number"
+                                                    name="cie1"
+                                                    id="cie1"
+                                                    pattern="[0-9]{2}"
+                                                    min="0"
+                                                    max="20"
+                                                    placeholder="CIE-1"
+                                                    required
+                                                />
+                                            </div>
+                                            <div
+                                                class="wrap-input100 validate-input"
+                                            >
+                                                <input
+                                                    class="input100"
+                                                    type="number"
+                                                    name="cie2"
+                                                    id="cie2"
+                                                    pattern="[0-9]{2}"
+                                                    min="0"
+                                                    max="20"
+                                                    placeholder="CIE-2"
+                                                    required
+                                                />
+                                            </div>
+                                            <div
+                                                class="wrap-input100 validate-input"
+                                            >
+                                                <input
+                                                    class="input100"
+                                                    type="number"
+                                                    name="cie3"
+                                                    id="cie3"
+                                                    pattern="[0-9]{2}"
+                                                    min="0"
+                                                    max="20"
+                                                    placeholder="CIE-3"
+                                                    required
+                                                />
+                                            </div>
+                                        </div>
+
+                                        <div class="common">
+                                            <div
+                                                class="wrap-input100 validate-input"
+                                            >
+                                                <input
+                                                    class="input100"
+                                                    type="number"
+                                                    name="lab1"
+                                                    id="lab1"
+                                                    pattern="[0-9]{2}"
+                                                    min="0"
+                                                    max="10"
+                                                    placeholder="LAB-1"
+                                                />
+                                            </div>
+                                            <div
+                                                class="wrap-input100 validate-input"
+                                            >
+                                                <input
+                                                    class="input100"
+                                                    type="number"
+                                                    name="lab2"
+                                                    id="lab2"
+                                                    pattern="[0-9]{2}"
+                                                    min="0"
+                                                    max="10"
+                                                    placeholder="LAB-2"
+                                                />
+                                            </div>
+                                            <div
+                                                class="wrap-input100 validate-input"
+                                            >
+                                                <input
+                                                    class="input100"
+                                                    type="number"
+                                                    name="aat"
+                                                    id="aat"
+                                                    pattern="[0-9]{1}"
+                                                    min="0"
+                                                    max="5"
+                                                    placeholder="AAT"
+                                                />
+                                            </div>
+                                        </div>
+
+                                        <div class="common">
+                                            <div
+                                                class="wrap-input100 validate-input"
+                                            >
+                                                <input
+                                                    class="input100"
+                                                    type="number"
+                                                    name="quiz1"
+                                                    id="quiz1"
+                                                    pattern="[0-9]{1}"
+                                                    min="0"
+                                                    max="5"
+                                                    placeholder="QUIZ-1"
+                                                />
+                                            </div>
+                                            <div
+                                                class="wrap-input100 validate-input"
+                                            >
+                                                <input
+                                                    class="input100"
+                                                    type="number"
+                                                    name="quiz2"
+                                                    id="quiz2"
+                                                    pattern="[0-9]{1}"
+                                                    min="0"
+                                                    max="5"
+                                                    placeholder="QUIZ-2"
+                                                />
+                                            </div>
+
+                                            <div
+                                                class="wrap-input100 validate-input"
+                                            >
+                                                <input
+                                                    class="input100"
+                                                    type="number"
+                                                    name="see"
+                                                    id="see"
+                                                    pattern="[0-9]{2}"
+                                                    min="0"
+                                                    max="50"
+                                                    placeholder="SEE"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="common">
+                                        <button
+                                            class="login100-form-btn"
+                                            value="submit"
+                                        >
+                                            Submit
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <script src="js/teach_marks.js"></script> -->
+    </body>
+</html>

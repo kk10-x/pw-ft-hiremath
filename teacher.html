@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Teacher</title>
+        <!--===============================================================================================-->
+        <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/bootstrap/css/bootstrap.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/animate/animate.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/css-hamburgers/hamburgers.min.css"
+        />
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="vendor/select2/select2.min.css"
+        />
+        <!--===============================================================================================-->
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/teach.css" />
+        <link rel="stylesheet" href="css/util.css" />
+        <link rel="stylesheet" href="css/index.css" />
+    </head>
+
+    <body>
+        <div class="limiter">
+            <div class="container-login100">
+                <div class="wrap-teach">
+                    <div class="innerflex">
+                        <div class="myflexbox_user">
+                            <div>
+                                <span class="header">
+                                    Welcome,{{ name }}
+                                </span>
+                            </div>
+                            <div>
+                                <span class="eheader">
+                                    {{email}}
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="flex-logout">
+                            <a href="/logout"
+                                ><button class="login100-form-btn">
+                                    Logout ‎<i
+                                        class="fa fa-sign-out"
+                                        aria-hidden="true"
+                                    ></i></button
+                            ></a>
+                            <!-- <span class="login100-form-title"></span> -->
+                        </div>
+                    </div>
+
+                    <div class="holder">
+                        <div class="myflexbox">
+                            <a href="/enter_marks">
+                                <button class="login100-form-btn">
+                                    Enter Marks‏‏‎ ‎<i
+                                        class="fa fa-check"
+                                        aria-hidden="true"
+                                    ></i></button
+                            ></a>
+                        </div>
+                        <br />
+                        <div class="myflexbox">
+                            <a href="/enter_announcement"
+                                ><button class="login100-form-btn">
+                                    Enter Announcement‏‏‎ ‎<i
+                                        class="fa fa-trophy"
+                                        aria-hidden="true"
+                                    ></i></button
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
